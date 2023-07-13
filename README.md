@@ -35,16 +35,12 @@ Create a new layers in AWS Lambda with the following ARNs:
 
 - Create the respective Lambda functions and copy the appropriate code from below (don't forget to insert your MySQL endpoint and API credentials).
 
-`schema="aws_p5_gans_database"
-host="YOUR_AWS_ENDPOINT"
-user="YOUR AWS_USER_NAME"
-password=YOUR_AWS_PASSWORD
-port=3306
-con = f'mysql+pymysql://{user}:{password}@{host}:{port}/{schema}'
-weather_data_df.to_sql('weather_table', 
-                       if_exists='append', 
-                       con=con, 
-                       index=False)`
+The ZIP file contain the different code for the Lambda functions:
+
+- `static_tables.zip` creates the DataFrames for the tables `city_table`, `airport_table` and `city_airport_table` and loads the data into the AWS MySQL database, which is created by executing `set_up_project_5_aws.sql` in MySQL Workbench
+- `city_data_web_scraping.zip` web scrapes data for the cities in the the list from Wikipedia, creates a DataFrame for the table `city_data_table` and loads the data into the AWS MySQL database, which is created by executing `set_up_project_5_aws.sql` in MySQL Workbench
+- `weather_data_api_call.zip` creates the DataFrames for the table `weather_table` and loads the data into the AWS MySQL database, which is created by executing `set_up_project_5_aws.sql` in MySQL Workbench
+- `arrivals_data_api_call.zip` creates the DataFrames for the table `arrivals_table` and loads the data into the AWS MySQL database, which is created by executing `set_up_project_5_aws.sql` in MySQL Workbench
 
 - Add your layer (see Prerequisites) to the function.
 - Create an appropriate CloudWatch event schedule. There is a nice short tutorial [here](https://www.youtube.com/watch?v=lSqd6DVWZ9o&t=1s).
