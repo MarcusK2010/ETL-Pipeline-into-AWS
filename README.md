@@ -1,5 +1,7 @@
 # ETL-pipeline into AWS
 
+In a nutshell, the project is about a fictitious e-scooter company, which is trying to efficiently distribute its scooter in several cities. My task was to collect data for these cities, cities where the company operates. They asked for data on population (to be updated annually), location (latitude and longitude), weather forecast and data on arrivals in the local airports (both updated on a daily basis) of these cities.
+
 To create an automated ETL pipeline on the cloud using Python and MySQL on AWS (RDS, Lambda, and CloudWatch). The project is designed to gather information on the geographic location and population of cities in Germany by 
 * web scraping [wikipedia.org](https://www.wikipedia.org/). 
 * API calls for weather information 
