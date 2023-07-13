@@ -20,10 +20,10 @@ Create a MySQL database on AWS RDS and execute the `set_up_project_5_aws.sql` to
 
 Create a new layers in AWS Lambda with the following ARNs:
 
-* arn:aws:lambda:eu-north-1:336392948345:layer:AWSSDKPandas-Python310:3
-* arn:aws:lambda:eu-north-1:770693421928:layer:Klayers-p310-requests:3
-* arn:aws:lambda:eu-north-1:770693421928:layer:Klayers-p310-beautifulsoup4:1
-* arn:aws:lambda:eu-north-1:770693421928:layer:Klayers-p39-SQLAlchemy:14 
+* `pandas` --> arn:aws:lambda:eu-north-1:336392948345:layer:AWSSDKPandas-Python310:3
+* `requests` --> arn:aws:lambda:eu-north-1:770693421928:layer:Klayers-p310-requests:3
+* `BeautifulSoup` --> arn:aws:lambda:eu-north-1:770693421928:layer:Klayers-p310-beautifulsoup4:1
+* `SQLAlchemy` --> arn:aws:lambda:eu-north-1:770693421928:layer:Klayers-p39-SQLAlchemy:14 
 
 ## Usage
 
@@ -43,4 +43,4 @@ The ZIP file contain the different code for the Lambda functions:
 - `arrivals_data_api_call.zip` creates the DataFrames for the table `arrivals_table` and loads the data into the AWS MySQL database, which is created by executing `set_up_project_5_aws.sql` in MySQL Workbench
 
 - Add your layer (see Prerequisites) to the function.
-- Create an appropriate CloudWatch event schedule. There is a nice short tutorial [here](https://www.youtube.com/watch?v=lSqd6DVWZ9o&t=1s).
+- Create an CloudWatch event schedule. There is a short tutorial [here](https://www.youtube.com/watch?v=lSqd6DVWZ9o&t=1s).
