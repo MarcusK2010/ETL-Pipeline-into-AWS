@@ -8,6 +8,7 @@ To create an automated ETL pipeline on the cloud using Python and MySQL on AWS (
 * API calls for information on arriving flights for the next day
 
 All data is stored in a relational database containing the tables `city_table`, `airports_table`, `city_airport_table`, `city_data_table`, `weather_table`, and `arrivals_table`.
+In the folder /`MySQL files` you will find the file `set_up_project_5_aws.sql`, which sets up the tables mentioned above.
 
 ## Prerequisites
 To run this project, you need an API key for the [Weather API - 5-day forecast](https://openweathermap.org/forecast5) as well as [AeroDataBox](https://rapidapi.com/aedbx-aedbx/api/aerodatabox/). Free options with monthly limited requests are available. 
