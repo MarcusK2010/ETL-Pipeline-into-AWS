@@ -7,6 +7,8 @@ To create an automated ETL pipeline on the cloud using Python and MySQL on AWS (
 * API calls for weather information 
 * API calls for information on arriving flights for the next day
 
+in the folder /`Notebooks` you will find the python code for the data extraction, transformation and loading into a local MySQL instance, as well as comments tothe code.
+
 All data is stored in a relational database containing the tables `city_table`, `airports_table`, `city_airport_table`, `city_data_table`, `weather_table`, and `arrivals_table`.
 In the folder /`MySQL files` you will find the file `set_up_project_5_aws.sql`, which sets up the tables mentioned above.
 
@@ -18,8 +20,6 @@ You also need an AWS account to run the project in the cloud.
 __WARNING:__ Free tier options are available for AWS, but costs may occur when choosing the wrong payment plan or exceeding limits. __I am not responsible for any costs.__
 
 - Set up your AWS credentials and ensure you have the necessary permissions to create and manage AWS resources.
-
-Create a MySQL database on AWS RDS and execute the `set_up_project_5_aws.sql` to set up the schema and necessary tables.
 
 Create a new layers in AWS Lambda with the following ARNs:
 
