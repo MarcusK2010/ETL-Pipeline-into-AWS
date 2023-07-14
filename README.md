@@ -35,7 +35,7 @@ Create a new layers in AWS Lambda with the following ARNs:
   - Update city information - should be updated yearly; older information will be stored with the respective year.
   - Update weather and arrival flights - should be updated on a daily basis to retrieve information for the next day.
 
-- Create the respective Lambda functions and copy the appropriate code from below (don't forget to insert your MySQL endpoint and API credentials).
+Create the respective Lambda functions and copy the appropriate code from the ZIP-files in the folder /`Lambda functions` (don't forget to insert your MySQL endpoint and API credentials).
 
 The ZIP file contain the different code for the Lambda functions:
 
@@ -43,6 +43,7 @@ The ZIP file contain the different code for the Lambda functions:
 - `city_data_web_scraping.zip` web scrapes data for the cities in the the list from Wikipedia, creates a DataFrame for the table `city_data_table` and loads the data into the AWS MySQL database, which is created by executing `set_up_project_5_aws.sql` in MySQL Workbench
 - `weather_data_api_call.zip` creates the DataFrames for the table `weather_table` and loads the data into the AWS MySQL database, which is created by executing `set_up_project_5_aws.sql` in MySQL Workbench
 - `arrivals_data_api_call.zip` creates the DataFrames for the table `arrivals_table` and loads the data into the AWS MySQL database, which is created by executing `set_up_project_5_aws.sql` in MySQL Workbench
+- `all_in_one_weather_arrivals.zip` creates the DataFrames for the tables `arrivals_table` and `weather_table` and loads the data into the AWS MySQL database, which is created by executing `set_up_project_5_aws.sql` in MySQL Workbench
 
 - Add your layer (see Prerequisites) to the function.
 - Create an CloudWatch event schedule. There is a short tutorial [here](https://www.youtube.com/watch?v=lSqd6DVWZ9o&t=1s).
