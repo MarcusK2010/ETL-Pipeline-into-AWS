@@ -47,4 +47,6 @@ The ZIP file contain the different code for the Lambda functions:
 - `all_in_one_weather_arrivals.zip` creates the DataFrames for the tables `arrivals_table` and `weather_table` and loads the data into the AWS MySQL database, which is created by executing `set_up_project_5_aws.sql` in MySQL Workbench <-- this Lambda function is a combination of `arrivals_data_api_call.zip` and `weather_data_api_call.zip` and does exactly the same as the two seperate functions. As the data extracted with these functions is to be updated daily, you can run this one function instead of the two separate ones.
 
 - Add your layer (see Prerequisites) to the function.
-- Create an CloudWatch event schedule. There is a short tutorial [here](https://www.youtube.com/watch?v=lSqd6DVWZ9o&t=1s).
+- Create an CloudWatch event schedule. There is a short tutorial [here](https://www.youtube.com/watch?v=lSqd6DVWZ9o&t).
+
+I also wrote and article about my experience with this project in can be found [here](https://medium.com/@krug.marcus.77/data-engineering-as-part-of-my-data-science-bootcamp-be995aaa5c69).
