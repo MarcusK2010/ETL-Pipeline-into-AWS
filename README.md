@@ -1,4 +1,7 @@
-# ETL-pipeline into AWS
+# ETL-pipeline into AWS 
+
+_An article about my experience with this project in can be found [here](https://medium.com/@krug.marcus.77/data-engineering-as-part-of-my-data-science-bootcamp-be995aaa5c69)._
+
 
 In a nutshell, the project is about a fictitious e-scooter company, which is trying to efficiently distribute its scooter in several cities. My task was to collect data for these cities, cities where the company operates. They asked for data on population (to be updated annually), location (latitude and longitude), weather forecast and data on arrivals in the local airports (both updated on a daily basis) of these cities.
 
@@ -48,5 +51,3 @@ The ZIP file contain the different code for the Lambda functions:
 
 - Add your layer (see Prerequisites) to the function.
 - Create an CloudWatch event schedule. There is a short tutorial [here](https://www.youtube.com/watch?v=lSqd6DVWZ9o&t).
-
-I also wrote and article about my experience with this project in can be found [here](https://medium.com/@krug.marcus.77/data-engineering-as-part-of-my-data-science-bootcamp-be995aaa5c69).
